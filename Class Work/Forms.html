@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form & Table</title>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <form action="/submit" method="post">
+        <p>
+            First Name:
+            <input type="text" id="firstName" name="firstName" required>
+        </p>
+
+        <p>
+            Last Name:
+            <input type="text" id="lastName" name="lastName" required>
+        </p>
+
+        <p>
+            Email Address:
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            Phone Number:
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        </p>
+
+        <p>
+            Gender:
+            <select>
+                <option value="" name="gender">Select your gender</option>
+                <option value="male" name="gender1">Male</option>
+                <option value="female" name="gender2">Female</option>
+            </select>
+        </p>
+        <br>
+
+            <label for="gender">
+                <input type="radio" id="gender" value="male"/>Male
+                <input type="radio" id="gender" value="female"/>Female
+            </label>
+        <p>
+            Course of Study:
+            <select>
+                <option value="" name="course">Pick a course</option>
+                <option value="math" name="course1">Mathematics</option>
+                <option value="science" name="course2">Science</option>
+                <option value="history" name="course3">History</option>
+                <option value="biology" name="course4">Biology</option>
+                <option value="computer" name="course5">Computer Studies</option>
+            </select>
+        </p>
+
+        <p>
+            Enrollment Date:
+            <input type="date" id="date" name="date">
+        </p>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+
+    <br>
+
+    <table border="2">
+        <caption>STUDENT INFORMATION</caption>
+        <tr align="left">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>Phone Number</th>
+            <th>Gender</th>
+            <th>Course of Study</th>
+            <th>Enrollment Date</th>
+        </tr>
+
+        <tr>
+            <td>Tobi</td>
+            <td>Obaremo</td>
+            <td>obaremooluatobiloba@gmail.com</td>
+            <td>08171648380</td>
+            <td>Male</td>
+            <td>Computer Studies</td>
+            <td>03/10/2022</td>
+        </tr>
+
+        <tr>
+            <td>Gbenga</td>
+            <td>Boboye</td>
+            <td>gbengaboboye@gmail.com</td>
+            <td>08156473656</td>
+            <td>Male</td>
+            <td>Biology</td>
+            <td>06/01/2021</td>
+        </tr>
+
+        <tr>
+            <td>Elizabeth</td>
+            <td>Alao</td>
+            <td>elizabethalo@gmail.com</td>
+            <td>08143256487</td>
+            <td>Female</td>
+            <td>History</td>
+            <td>28/02/2023</td>
+        </tr>
+
+        <tr>
+            <td>Eluku</td>
+            <td>Mede</td>
+            <td>elukumede@gmail.com</td>
+            <td>08187964536</td>
+            <td>Male</td>
+            <td>Mathematics</td>
+            <td>28/11/2022</td>
+        </tr>
+
+        <tr>
+            <td>Abosede</td>
+            <td>Chinye</td>
+            <td>abosedechinye@gmail.com</td>
+            <td>08165749831</td>
+            <td>Female</td>
+            <td>Science</td>
+            <td>27/12/2024</td>
+        </tr>
+    </table>
+</body>
+</html>
